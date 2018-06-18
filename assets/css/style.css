@@ -1,40 +1,158 @@
+@font-face {
+  font-family: "Circular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Book-9a1c9cca9bb3d65fefa2aa487617805e.woff2") format("woff2"), url("https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Book-aa38e86e3f98554f9f7053d7b713b4db.woff") format("woff");
+}
+@font-face {
+  font-family: "Circular";
+  font-style: normal;
+  font-weight: 800;
+  src: url("https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Bold-bdfb98485e7836ba31b456f65cded088.woff2") format("woff2"), url("https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Bold-a188841af78481a25b7bb2316a5f5716.woff") format("woff");
+}
+body{
+  padding: 0;
+  margin: 0;
+}
+nav{
+  background: white;
+}
+.red-logo{
+  color: rgb(255, 90, 95);
+}
+.no-padding-x{
+  padding-left: 0;
+  padding-right: 0;
+}
+.relative{
+  position: relative;
+}
+.absolute{
+  position: absolute;
+}
+.top-color{
+  background: rgba(0, 0, 0, 0) linear-gradient(transparent 0%, rgba(0, 0, 0, 0.65) 100%);
+  text-shadow: rgb(0, 0, 0) 0px 2px 1em;
+}
+#img-overflow{
+  overflow: hidden;
+  background: rgb(216, 216, 216);
+  z-index: -2;
+}
+#background-img{
+  min-height: 100%;
+  min-width: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.5s ease 0s;
+  opacity: 1;
+  z-index: -1;
+}
+#logo-link{
+  color: rgb(255, 90, 95);
+  display: inline-block;
+  font-size: 2rem;
+}
+.input-style{
+  background-color: transparent;
+  border: solid #DBDBDB 1px;
+  border-radius: 0px;
+  height: 44px;
+  padding-left: 1rem;
+}
+.input-style-left{
+  background-color: transparent;
+  border: solid #DBDBDB 1px;
+  border-right: 0;
+  border-radius: 0px;
+  height: 44px;
+  padding-left: 1rem;
+}
+.input-style-right{
+  background-color: transparent;
+  border: solid #DBDBDB 1px;
+  border-left: 0;
+  border-radius: 0px;
+  height: 44px;
+  padding-left: 1rem;
+}
+.normal-font{
+  font-size: 1rem;
+  font-family: Circular;
+  line-height: 1.2rem;
+  letter-spacing: normal;
+  color: rgb(72, 72, 72);
+  font-weight: normal;
+}
+.normal-font-bold{
+  color: rgb(72, 72, 72);
+  font-family: Circular;
+  font-size: 2.3em;
+  font-weight: bold;
+}
+.font-white-bold{
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 2.2rem;
+  color: rgb(255,255,255);
+  margin: 0;
+  padding: 0;
+}
+.font-white{
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: normal;
+  color: rgb(255, 255, 255);
+}
+.button-color{
+  cursor: pointer;
+  text-align: center;
+  border-radius: 4px;
+  font-weight: 800;
+  background: rgb(255, 90, 95);
+  border-color: transparent;
+  color: rgb(255, 255, 255);
+}
+.button-color:active{
+  background: #de2b37;
+  transition: all 0.5s ease;
+}
+small{
+  text-transform: capitalize;
+  font-weight: 800;
+}
+.white-bg{
+  background: white;
+  border-radius: 5px;
+}
 .pmtitre{
-font-weight: bold;
+  font-weight: bold;
   font-size: 19px;
-line-height: 26px;
-letter-spacing: normal;
+  line-height: 26px;
+  letter-spacing: normal;
 }
-
-
 .pmtitre1{
-color: #484848;
-font-weight: bold ;
-margin-bottom: 40px;
-line-height: inherit
-letter-spacing: normal;
-font-size: 1em;
-
-height: 20%;
+  margin-bottom: 40px;
+  font-size: 1em;
+  height: 20%;
 }
-.timg{
+.timg, .timg2, .pmtitre1{
   color: #484848;
   font-weight: bold ;
   line-height: inherit
   letter-spacing: normal;
   font-size: 2em;
 }
-.para{
+.para, .para2{
   color: #767676;
-
-
   line-height: inherit
   letter-spacing: normal;
+}
+.para{
   font-size: 14px;
 }
 .para2{
-  color: #767676;
-  line-height: inherit
-  letter-spacing: normal;
   font-size: 16px;
 }
 #margin-left{
@@ -43,41 +161,12 @@ height: 20%;
   margin-left: -15px;
 }
 .timg2{
-  color: #484848;
-  font-weight: bold ;
   margin-bottom: 40px;
-  line-height: inherit
-  letter-spacing: normal;
-  font-size: 2em;
 }
 #car1{
-margin-right: 200px;
+  margin-right: 200px;
 }
-.p1{
-
-
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: normal;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue,! sans-serif;
-  color: rgb(72, 72, 72);
-  font-weight: normal;
-  display: inline;
-}
-
-.p2{
-
-
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: normal;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue,! sans-serif;
-  color: rgb(72, 72, 72);
-  font-weight: normal;
-  display: inline;
-}
-.p3{
-
+.p1, .p2, .p3, .para3{
   font-size: 14px;
   line-height: 18px;
   letter-spacing: normal;
@@ -87,22 +176,15 @@ margin-right: 200px;
   display: inline;
 }
 .car2{
-padding-right: 8px;
-padding-left: 88px;
-margin-left: auto;
-margin-right: auto;
+  padding-right: 8px;
+  padding-left: 88px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .etoile{
-color: #008489;
+  color: #008489;
 }
 .para3{
   margin: 0px ;
   overflow-wrap: break-word ;
-  font-size: 14px ;
-  line-height: 18px ;
-  letter-spacing: normal ;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue,! sans-serif important;
-  color: rgb(72, 72, 72) ;
-  font-weight: normal ;
-  display: inline ;
 }

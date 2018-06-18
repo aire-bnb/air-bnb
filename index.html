@@ -1,14 +1,319 @@
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" />
   <link rel="stylesheet" href="assets/css/bootstrap.css" />
+  <link rel="shortcut icon" sizes="76x76" type="image/x-icon" href="https://a0.muscache.com/airbnb/static/logotype_favicon-21cc8e6c6a2cca43f061d2dcabdf6e58.ico">
   <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="assets/js/script.js"></script>
   <title>Locations saisonnières et locations en résidence - Airbnb</title>
 </head>
 <body>
+  <div id="head">
+    <div class="d-block d-sm-block d-md-block d-lg-none d-xl-none">
+      <div class="relative w-100">
+        <div id="img-overflow" class="absolute w-100 h-100">
+          <div class="w-100 h-100 absolute">
+            <img
+            id="background-img"
+            class="absolute"
+            alt="Trouvez des logements sur Airbnb"
+            sizes="100vw"
+            srcset="https://a0.muscache.com/airbnb/growth/magic_carpet/hero4_medium.jpg 775w,https://a0.muscache.com/airbnb/growth/magic_carpet/hero4_large.jpg 1550w,https://a0.muscache.com/airbnb/growth/magic_carpet/hero4_large@2x.jpg 3100w" src="https://a0.muscache.com/airbnb/growth/magic_carpet/hero4_medium.jpg"
+            />
+          </div>
+          <div class="w-100 h-100 top-color"></div>
+        </div>
+        <a href="https://www.airbnb.fr/?from_belo_click" id="logo-link" class="m-0 py-2 px-3">
+          <svg viewBox="0 0 1000 1000" role="img" aria-label="Home" focusable="false" style="height:1em;width:1em;display:block;fill:#ffffff">
+            <path d="m499.3 736.7c-51-64-81-120.1-91-168.1-10-39-6-70 11-93 18-27 45-40 80-40s62 13 80 40c17 23 21 54 11 93-11 49-41 105-91 168.1zm362.2 43c-7 47-39 86-83 105-85 37-169.1-22-241.1-102 119.1-149.1 141.1-265.1 90-340.2-30-43-73-64-128.1-64-111 0-172.1 94-148.1 203.1 14 59 51 126.1 110 201.1-37 41-72 70-103 88-24 13-47 21-69 23-101 15-180.1-83-144.1-184.1 5-13 15-37 32-74l1-2c55-120.1 122.1-256.1 199.1-407.2l2-5 22-42c17-31 24-45 51-62 13-8 29-12 47-12 36 0 64 21 76 38 6 9 13 21 22 36l21 41 3 6c77 151.1 144.1 287.1 199.1 407.2l1 1 20 46 12 29c9.2 23.1 11.2 46.1 8.2 70.1zm46-90.1c-7-22-19-48-34-79v-1c-71-151.1-137.1-287.1-200.1-409.2l-4-6c-45-92-77-147.1-170.1-147.1-92 0-131.1 64-171.1 147.1l-3 6c-63 122.1-129.1 258.1-200.1 409.2v2l-21 46c-8 19-12 29-13 32-51 140.1 54 263.1 181.1 263.1 1 0 5 0 10-1h14c66-8 134.1-50 203.1-125.1 69 75 137.1 117.1 203.1 125.1h14c5 1 9 1 10 1 127.1.1 232.1-123 181.1-263.1z">
+            </path>
+          </svg>
+        </a>
+        <div class="relative w-100 mt-5">
+          <h1 class="px-3 font-white-bold">Trouvez des logements sur Airbnb</h1>
+          <p class="px-3 font-white pb-3">Découvrez des chambres privées ou des logements entiers, parfaitement adaptés à tout type de voyage.</p>
+        </div>
+      </div>
+      <form class="" action="index.html" method="post">
+        <div class="container-fluid">
+          <div class="row my-1">
+            <div class="col-12">
+              <small>où</small>
+              <input
+              autocomplete="off"
+              class="w-100 input-style"
+              id=""
+              name="location"
+              placeholder="Partout"
+              value=""
+              role="textbox"
+              type="text"
+              />
+            </div>
+          </div>
+          <div class="row my-1">
+            <div class="col-6">
+              <small>arrivée</small>
+              <input
+              autocomplete="off"
+              class="w-100 input-style"
+              id=""
+              name="location"
+              placeholder="jj/mm/aaaa"
+              value=""
+              role="textbox"
+              type="text"
+              />
+            </div>
+            <div class="col-6">
+              <small>départ</small>
+              <input
+              autocomplete="off"
+              class="w-100 input-style"
+              id=""
+              name="location"
+              placeholder="jj/mm/aaaa"
+              value=""
+              role="textbox"
+              type="text"
+              />
+            </div>
+          </div>
+          <div class="row my-1">
+            <div class="col-6">
+              <small>adultes</small>
+              <select class="w-100 input-style" name="">
+                <option value="1">1 adulte</option>
+                <option value="2">2 adultes</option>
+                <option value="3">3 adultes</option>
+                <option value="4">4 adultes</option>
+                <option value="5">5 adultes</option>
+                <option value="6">6 adultes</option>
+                <option value="7">7 adultes</option>
+                <option value="8">8 adultes</option>
+                <option value="9">9 adultes</option>
+                <option value="10">10 adultes</option>
+                <option value="11">11 adultes</option>
+                <option value="12">12 adultes</option>
+                <option value="13">13 adultes</option>
+                <option value="14">14 adultes</option>
+                <option value="15">15 adultes</option>
+                <option value="16">16 adultes</option>
+              </select>
+            </div>
+            <div class="col-6">
+              <small>enfants</small>
+              <select class="w-100 input-style" name="">
+                <option value="0">0 enfant</option>
+                <option value="1">1 enfant</option>
+                <option value="2">2 enfants</option>
+                <option value="3">3 enfants</option>
+                <option value="4">4 enfants</option>
+                <option value="5">5 enfants</option>
+                <option value="6">6 enfants</option>
+                <option value="7">7 enfants</option>
+                <option value="8">8 enfants</option>
+                <option value="9">9 enfants</option>
+                <option value="10">10 enfants</option>
+                <option value="11">11 enfants</option>
+                <option value="12">12 enfants</option>
+                <option value="13">13 enfants</option>
+                <option value="14">14 enfants</option>
+                <option value="15">15 enfants</option>
+              </select>
+            </div>
+          </div>
+          <div class="row my-1">
+            <div class="col">
+              <button type="submit" class="button-color w-100 py-2 px-3 m-0 mt-3" aria-busy="false">
+                <span class="font-white">Rechercher</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="d-none d-lg-block d-xl-block">
+      <div class="relative w-100">
+        <div id="img-overflow" class="absolute w-100 h-100">
+          <div class="w-100 h-100 absolute">
+            <img
+            id="background-img"
+            class="absolute"
+            alt="Trouvez des logements sur Airbnb"
+            sizes="100vw"
+            srcset="https://a0.muscache.com/airbnb/growth/magic_carpet/hero4_medium.jpg 775w,https://a0.muscache.com/airbnb/growth/magic_carpet/hero4_large.jpg 1550w,https://a0.muscache.com/airbnb/growth/magic_carpet/hero4_large@2x.jpg 3100w" src="https://a0.muscache.com/airbnb/growth/magic_carpet/hero4_medium.jpg"
+            />
+          </div>
+        </div>
+        <a href="https://www.airbnb.fr/?from_belo_click" id="logo-link" class="m-0 py-2 px-3">
+          <svg viewBox="0 0 1000 1000" role="img" aria-label="Home" focusable="false" style="height:1em;width:1em;display:block;fill:#ffffff">
+            <path d="m499.3 736.7c-51-64-81-120.1-91-168.1-10-39-6-70 11-93 18-27 45-40 80-40s62 13 80 40c17 23 21 54 11 93-11 49-41 105-91 168.1zm362.2 43c-7 47-39 86-83 105-85 37-169.1-22-241.1-102 119.1-149.1 141.1-265.1 90-340.2-30-43-73-64-128.1-64-111 0-172.1 94-148.1 203.1 14 59 51 126.1 110 201.1-37 41-72 70-103 88-24 13-47 21-69 23-101 15-180.1-83-144.1-184.1 5-13 15-37 32-74l1-2c55-120.1 122.1-256.1 199.1-407.2l2-5 22-42c17-31 24-45 51-62 13-8 29-12 47-12 36 0 64 21 76 38 6 9 13 21 22 36l21 41 3 6c77 151.1 144.1 287.1 199.1 407.2l1 1 20 46 12 29c9.2 23.1 11.2 46.1 8.2 70.1zm46-90.1c-7-22-19-48-34-79v-1c-71-151.1-137.1-287.1-200.1-409.2l-4-6c-45-92-77-147.1-170.1-147.1-92 0-131.1 64-171.1 147.1l-3 6c-63 122.1-129.1 258.1-200.1 409.2v2l-21 46c-8 19-12 29-13 32-51 140.1 54 263.1 181.1 263.1 1 0 5 0 10-1h14c66-8 134.1-50 203.1-125.1 69 75 137.1 117.1 203.1 125.1h14c5 1 9 1 10 1 127.1.1 232.1-123 181.1-263.1z">
+            </path>
+          </svg>
+        </a>
+        <div class="relative w-100 mt-5">
+          <div class="container-fluid">
+            <div class="row pb-4">
+              <div class="col-5 offset-1 white-bg">
+                <h1 class="px-3 mt-4 normal-font-bold">Trouvez des logements sur Airbnb</h1>
+                <p class="px-3 pb-1">Découvrez des chambres privées ou des logements entiers, parfaitement adaptés à tout type de voyage.</p>
+                <form class="pb-3" action="index.html" method="post">
+                  <div class="container-fluid">
+                    <div class="row my-1">
+                      <div class="col-12">
+                        <small>où</small>
+                        <input
+                        autocomplete="off"
+                        class="w-100 input-style"
+                        id=""
+                        name="location"
+                        placeholder="Partout"
+                        value=""
+                        role="textbox"
+                        type="text"
+                        />
+                      </div>
+                    </div>
+                    <div class="row my-1">
+                      <div class="col-6">
+                        <small>arrivée</small>
+                        <input
+                        autocomplete="off"
+                        class="w-100 input-style"
+                        id=""
+                        name="location"
+                        placeholder="jj/mm/aaaa"
+                        value=""
+                        role="textbox"
+                        type="text"
+                        />
+                      </div>
+                      <div class="col-6">
+                        <small>départ</small>
+                        <input
+                        autocomplete="off"
+                        class="w-100 input-style"
+                        id=""
+                        name="location"
+                        placeholder="jj/mm/aaaa"
+                        value=""
+                        role="textbox"
+                        type="text"
+                        />
+                      </div>
+                    </div>
+                    <div class="row my-1">
+                      <div class="col-6">
+                        <small>adultes</small>
+                        <select class="w-100 input-style" name="">
+                          <option value="1">1 adulte</option>
+                          <option value="2">2 adultes</option>
+                          <option value="3">3 adultes</option>
+                          <option value="4">4 adultes</option>
+                          <option value="5">5 adultes</option>
+                          <option value="6">6 adultes</option>
+                          <option value="7">7 adultes</option>
+                          <option value="8">8 adultes</option>
+                          <option value="9">9 adultes</option>
+                          <option value="10">10 adultes</option>
+                          <option value="11">11 adultes</option>
+                          <option value="12">12 adultes</option>
+                          <option value="13">13 adultes</option>
+                          <option value="14">14 adultes</option>
+                          <option value="15">15 adultes</option>
+                          <option value="16">16 adultes</option>
+                        </select>
+                      </div>
+                      <div class="col-6">
+                        <small>enfants</small>
+                        <select class="w-100 input-style" name="">
+                          <option value="0">0 enfant</option>
+                          <option value="1">1 enfant</option>
+                          <option value="2">2 enfants</option>
+                          <option value="3">3 enfants</option>
+                          <option value="4">4 enfants</option>
+                          <option value="5">5 enfants</option>
+                          <option value="6">6 enfants</option>
+                          <option value="7">7 enfants</option>
+                          <option value="8">8 enfants</option>
+                          <option value="9">9 enfants</option>
+                          <option value="10">10 enfants</option>
+                          <option value="11">11 enfants</option>
+                          <option value="12">12 enfants</option>
+                          <option value="13">13 enfants</option>
+                          <option value="14">14 enfants</option>
+                          <option value="15">15 enfants</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row my-1">
+                      <div class="col">
+                        <button type="submit" class="button-color w-100 py-2 px-3 m-0 mt-3" aria-busy="false">
+                          <span class="font-white">Rechercher</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav id="navbar" class="fixed-top">
+    <a href="https://www.airbnb.fr/?from_belo_click" class="red-logo float-left m-3">
+      <svg viewBox="0 0 1000 1000" role="img" aria-label="Page d'accueil" focusable="false" style="height: 34px; width: 34px; display: block; fill: currentcolor;">
+        <path d="m499.3 736.7c-51-64-81-120.1-91-168.1-10-39-6-70 11-93 18-27 45-40 80-40s62 13 80 40c17 23 21 54 11 93-11 49-41 105-91 168.1zm362.2 43c-7 47-39 86-83 105-85 37-169.1-22-241.1-102 119.1-149.1 141.1-265.1 90-340.2-30-43-73-64-128.1-64-111 0-172.1 94-148.1 203.1 14 59 51 126.1 110 201.1-37 41-72 70-103 88-24 13-47 21-69 23-101 15-180.1-83-144.1-184.1 5-13 15-37 32-74l1-2c55-120.1 122.1-256.1 199.1-407.2l2-5 22-42c17-31 24-45 51-62 13-8 29-12 47-12 36 0 64 21 76 38 6 9 13 21 22 36l21 41 3 6c77 151.1 144.1 287.1 199.1 407.2l1 1 20 46 12 29c9.2 23.1 11.2 46.1 8.2 70.1zm46-90.1c-7-22-19-48-34-79v-1c-71-151.1-137.1-287.1-200.1-409.2l-4-6c-45-92-77-147.1-170.1-147.1-92 0-131.1 64-171.1 147.1l-3 6c-63 122.1-129.1 258.1-200.1 409.2v2l-21 46c-8 19-12 29-13 32-51 140.1 54 263.1 181.1 263.1 1 0 5 0 10-1h14c66-8 134.1-50 203.1-125.1 69 75 137.1 117.1 203.1 125.1h14c5 1 9 1 10 1 127.1.1 232.1-123 181.1-263.1z">
+        </path>
+      </svg>
+    </a>
+    <form class="m-0 p-0" action="index.html" method="post">
+      <input
+      autocomplete="off"
+      class="input-style float-left m-0 mt-2 w-25"
+      id=""
+      name="location"
+      placeholder="Partout"
+      value=""
+      role="textbox"
+      type="text"
+      />
+      <input
+      autocomplete="off"
+      class="input-style-left float-left m-0 mt-2"
+      id=""
+      name="location"
+      placeholder="jj/mm/aaaa"
+      value=""
+      role="textbox"
+      type="text"
+      />
+      <input
+      autocomplete="off"
+      class="input-style-right float-left m-0 mt-2"
+      id=""
+      name="location"
+      placeholder="jj/mm/aaaa"
+      value=""
+      role="textbox"
+      type="text"
+      />
+      <select class="input-style w-25 float-left m-0 mt-2" name="">
+        <option value="0">1 voyageur</option>
+      </select>
+      <button type="submit" class="button-color py-2 px-3 m-0 mt-2" aria-busy="false">
+        <span class="font-white">Rechercher</span>
+      </button>
+    </form>
+  </nav>
   <div class="contenair-fluid">
     <div class="row">
       <div class="offset-3 col-md-5">
