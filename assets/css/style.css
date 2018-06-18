@@ -37,6 +37,11 @@ height: 20%;
   letter-spacing: normal;
   font-size: 16px;
 }
+#margin-left{
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
 .timg2{
   color: #484848;
   font-weight: bold ;
@@ -49,7 +54,7 @@ height: 20%;
 margin-right: 200px;
 }
 .p1{
-  margin: 0px
+
 
   font-size: 14px;
   line-height: 18px;
@@ -58,4 +63,46 @@ margin-right: 200px;
   color: rgb(72, 72, 72);
   font-weight: normal;
   display: inline;
+}
+
+.p2{
+
+
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: normal;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue,! sans-serif;
+  color: rgb(72, 72, 72);
+  font-weight: normal;
+  display: inline;
+}
+.p3{
+
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: normal;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue,! sans-serif;
+  color: rgb(72, 72, 72);
+  font-weight: normal;
+  display: inline;
+}
+.car2{
+padding-right: 8px;
+padding-left: 88px;
+margin-left: auto;
+margin-right: auto;
+}
+.etoile{
+color: #008489;
+}
+.para3{
+  margin: 0px ;
+  overflow-wrap: break-word ;
+  font-size: 14px ;
+  line-height: 18px ;
+  letter-spacing: normal ;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue,! sans-serif important;
+  color: rgb(72, 72, 72) ;
+  font-weight: normal ;
+  display: inline ;
 }
