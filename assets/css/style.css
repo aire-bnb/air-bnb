@@ -1,0 +1,61 @@
+.pmtitre{
+font-weight: bold;
+  font-size: 19px;
+line-height: 26px;
+letter-spacing: normal;
+}
+
+
+.pmtitre1{
+color: #484848;
+font-weight: bold ;
+margin-bottom: 40px;
+line-height: inherit
+letter-spacing: normal;
+font-size: 1em;
+
+height: 20%;
+}
+.timg{
+  color: #484848;
+  font-weight: bold ;
+  line-height: inherit
+  letter-spacing: normal;
+  font-size: 2em;
+}
+.para{
+  color: #767676;
+
+
+  line-height: inherit
+  letter-spacing: normal;
+  font-size: 14px;
+}
+.para2{
+  color: #767676;
+  line-height: inherit
+  letter-spacing: normal;
+  font-size: 16px;
+}
+.timg2{
+  color: #484848;
+  font-weight: bold ;
+  margin-bottom: 40px;
+  line-height: inherit
+  letter-spacing: normal;
+  font-size: 2em;
+}
+#car1{
+margin-right: 200px;
+}
+.p1{
+  margin: 0px
+
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: normal;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue,! sans-serif;
+  color: rgb(72, 72, 72);
+  font-weight: normal;
+  display: inline;
+}
