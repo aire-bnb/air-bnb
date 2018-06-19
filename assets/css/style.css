@@ -17,9 +17,6 @@ body{
 nav{
   background: white;
 }
-.red-logo{
-  color: rgb(255, 90, 95);
-}
 .no-padding-x{
   padding-left: 0;
   padding-right: 0;
@@ -54,12 +51,14 @@ nav{
   display: inline-block;
   font-size: 2rem;
 }
+#logo-link:hover{
+  color: rgb(255, 90, 95);
+}
 .input-style{
   background-color: transparent;
   border: solid #DBDBDB 1px;
   border-radius: 0px;
   height: 44px;
-  padding-left: 1rem;
 }
 .input-style-left{
   background-color: transparent;
@@ -67,7 +66,6 @@ nav{
   border-right: 0;
   border-radius: 0px;
   height: 44px;
-  padding-left: 1rem;
 }
 .input-style-right{
   background-color: transparent;
@@ -75,7 +73,6 @@ nav{
   border-left: 0;
   border-radius: 0px;
   height: 44px;
-  padding-left: 1rem;
 }
 .normal-font{
   font-size: 1rem;
@@ -240,7 +237,7 @@ a:hover{
 }
 
 .Bordure {
-  border-bottom:1px solid black !important;
+  border-bottom:1px solid black;
 }
 a{
   text-decoration: none;
@@ -271,7 +268,6 @@ h4{
   color:#484848;
   text-shadow: 1px #4870ae;
   font-size:1em;
-  margin-bottom:18px;
   margin-left: 40px;
   padding:0px,
 }
