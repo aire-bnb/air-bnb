@@ -50,25 +50,17 @@ nav{
 #logo-link:hover{
   color: rgb(255, 90, 95);
 }
-.input-style{
+.input-style, .input-style-left, .input-style-right{
   background-color: transparent;
   border: solid #DBDBDB 1px;
   border-radius: 0px;
   height: 44px;
 }
 .input-style-left{
-  background-color: transparent;
-  border: solid #DBDBDB 1px;
   border-right: 0;
-  border-radius: 0px;
-  height: 44px;
 }
 .input-style-right{
-  background-color: transparent;
-  border: solid #DBDBDB 1px;
   border-left: 0;
-  border-radius: 0px;
-  height: 44px;
 }
 .normal-font{
   font-size: 1rem;
@@ -83,16 +75,16 @@ nav{
 .font-white-bold{
   font-size: 2rem;
   line-height: 2.2rem;
-  color: rgb(255,255,255);
+  color: white;
   margin: 0;
   padding: 0;
 }
 .font-white{
   font-size: 1rem;
   line-height: 1.5rem;
-  color: rgb(255, 255, 255);
+  color: white;
 }
-.button-color, small, #nazelles, #avignon, #yourte, #description, h3, h4, #bouton{
+#piscine, .button-color, small, #nazelles, #avignon, #yourte, #description, h3, h4, #bouton{
   font-weight: 800;
 }
 .button-color{
@@ -101,7 +93,7 @@ nav{
   border-radius: 4px;
   background: rgb(255, 90, 95);
   border-color: transparent;
-  color: rgb(255, 255, 255);
+  color: white;
 }
 .button-color:active{
   background: #de2b37;
@@ -207,15 +199,11 @@ a:hover{
   line-height: 1.2rem;
   color: rgb(72,72,72);
 }
-.filtrePiscine{
-  background-color: blue;
-}
 #piscine{
-margin-top: -110px;
-text-align: center;
-color:white;
-font-weight: 800;
-font-size: 22px;
+  margin-top: -110px;
+  text-align: center;
+  color:white;
+  font-size: 22px;
 }
 .Bordure {
   border-bottom:1px solid black;
