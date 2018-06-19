@@ -142,6 +142,8 @@ small{
   font-weight: bold ;
   line-height: inherit
   letter-spacing: normal;
+}
+.timg, .timg2{
   font-size: 2em;
 }
 .para, .para2{
