@@ -168,6 +168,20 @@ small{
 #car1{
   margin-right: 200px;
 }
+.media-img{
+  height: 40px;
+  width: 40px;
+}
+.media-name{
+  font-size: 1rem;
+  font-weight: 600;
+  color: #767682;
+}
+.media-country{
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #767682;
+}
 .p1, .p2, .p3, .para3{
   font-size: 14px;
   line-height: 18px;
@@ -319,7 +333,6 @@ h4{
 }
 #bouton{
   min-width: 77.6656px;
-  float: right;
   transition-property:background, border-color, color;
   transition-duration: 0.2s;
   transition-timing-function: ease-out;
@@ -327,17 +340,8 @@ h4{
   cursor: pointer;
   overflow-wrap: break-word;
   font-size: 20px;
-  height: 130%;
-  width: auto;
-  border-bottom-right-radius:5px 5px;
-  border-top-right-radius: 5px 5px;
-  border-bottom-left-radius: 5px 5px;
-  border-top-left-radius: 5px 5px;
+  border-radius: 5px;
   background: transparent;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 1%;
-  padding-bottom: 1%;
   border:2px solid #008489;
   color: #008489;
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue,! sans-serif;
@@ -351,8 +355,6 @@ h4{
   font-family: Circular ;
   color: #484848;
   text-align: left;
-  margin-left: 15%;
-  margin-bottom: 25%;
   font-weight: normal;
 }
 li{
