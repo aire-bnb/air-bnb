@@ -82,17 +82,15 @@ nav{
   font-family: Circular;
   line-height: 1.2rem;
   letter-spacing: normal;
+}
+.normal-font, .normal-font-bold, .p1, .p2, .p3, .para3, .tdrl, select{
   color: rgb(72, 72, 72);
-  font-weight: normal;
 }
 .normal-font-bold{
-  color: rgb(72, 72, 72);
   font-family: Circular;
   font-size: 2.3em;
-  font-weight: bold;
 }
 .font-white-bold{
-  font-weight: bold;
   font-size: 2rem;
   line-height: 2.2rem;
   color: rgb(255,255,255);
@@ -105,11 +103,13 @@ nav{
   letter-spacing: normal;
   color: rgb(255, 255, 255);
 }
+.button-color, small, #nazelles, #avignon, #yourte, #description, h3, h4, #bouton{
+  font-weight: 800;
+}
 .button-color{
   cursor: pointer;
   text-align: center;
   border-radius: 4px;
-  font-weight: 800;
   background: rgb(255, 90, 95);
   border-color: transparent;
   color: rgb(255, 255, 255);
@@ -120,14 +120,12 @@ nav{
 }
 small{
   text-transform: capitalize;
-  font-weight: 800;
 }
 .white-bg{
   background: white;
   border-radius: 5px;
 }
 .pmtitre{
-  font-weight: bold;
   font-size: 19px;
   line-height: 26px;
   letter-spacing: normal;
@@ -151,7 +149,7 @@ small{
   line-height: inherit
   letter-spacing: normal;
 }
-.para{
+.para, .FB, .TW, .IT, li, .tdrl, select{
   font-size: 14px;
 }
 .para2{
@@ -172,67 +170,48 @@ small{
   height: 40px;
   width: 40px;
 }
-.media-name{
-  font-size: 1rem;
-  font-weight: 600;
+.media-name, .media-country{
   color: #767682;
+}
+.media-name, .media-country, .contenu p, .tdrl{
+  font-weight: 600;
+}
+.media-name, .p1, .p2, .p3, .para3{
+  font-size: 1rem;
 }
 .media-country{
   font-size: 0.7rem;
-  font-weight: 600;
-  color: #767682;
+}
+.p1, .p2, .p3, .para3, li, .tdrl, select{
+  line-height: 18px;
 }
 .p1, .p2, .p3, .para3{
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: normal;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue,! sans-serif;
-  color: rgb(72, 72, 72);
-  font-weight: normal;
   display: inline;
 }
-.car2{
-  padding-right: 8px;
-  padding-left: 88px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.etoile{
-  color: #008489;
-}
 .para3{
-  margin: 0px ;
   overflow-wrap: break-word ;
 }
 ul li{
   list-style-type: none;
   text-align: left;
-  margin-left: -40px;
 }
 #nazelles{
   color: rgb(115,79,33);
-  font-weight: 800;
-  line-height: 16px;
-  margin-top: 15px;
 }
 #avignon{
   color: rgb(52,30,19);
-  font-weight: 800;
-  line-height: 16px;
-  margin-top: 15px;
 }
 #yourte{
-color: rgb(165,41,3);
-font-weight: 800;
-line-height: 16px;
-margin-top: 15px;
+  color: rgb(165,41,3);
+}
+#nazelles, #avignon, #yourte{
+  line-height: 16px;
 }
 a:hover{
   text-decoration: none;
   color: inherit;
 }
 #description{
-  font-weight: 800;
   font-size: 19px;
   line-height: 22px;
   color: rgb(72,72,72);
@@ -243,8 +222,10 @@ a:hover{
 #classement{
   font-size: 12px;
 }
-#superhost{
+#superhost, .normal-font-bold, .font-white-bold, .pmtitre{
   font-weight: bold;
+}
+#superhost{
   line-height: 1.2rem;
   letter-spacing: normal;
   color: rgb(72,72,72);
@@ -260,10 +241,6 @@ a:hover{
 
 .Bordure {
   border-bottom:1px solid black !important;
-}
-.espace{
-  margin-top: 16px;
-  margin-bottom: 16px;
 }
 a{
   text-decoration: none;
@@ -285,18 +262,10 @@ ul{
   border-color: 1px solid black;
 }
 h3{
-  font-family:   Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue,! sans-serif;
   color:#484848;
   text-shadow: 1px #4870ae;
-  font-style: normal;
-  font-weight: 800;
-  margin-left: 10%;
 }
 h4{
-  overflow-wrap: break-word !important;
-  font-family: font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue,! sans-serif;
-  font-style: normal;
-  font-weight: 800;
   src: url("https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Bold-bdfb98485e7836ba31b456f65cded088.woff2") format("woff2"), url("https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Bold-a188841af78481a25b7bb2316a5f5716.woff") format("woff");
   margin-bottom: 100px;
   color:#484848;
@@ -310,7 +279,6 @@ h4{
   margin-left: 45px;
   font-weight: 600 ;
   overflow-wrap: break-word ;
-  font-size: 14px ;
   line-height: 18px ;
   letter-spacing: normal ;
   font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue,! sans-serif important;
@@ -319,7 +287,6 @@ h4{
   margin-left: 10px;
   font-weight: 600 ;
   overflow-wrap: break-word ;
-  font-size: 14px ;
   line-height: 18px ;
   letter-spacing: normal ;
 }
@@ -327,15 +294,10 @@ h4{
   margin-left: 10px;
   font-weight: 600 ;
   overflow-wrap: break-word ;
-  font-size: 14px ;
   line-height: 18px ;
   letter-spacing: normal ;
 }
 #bouton{
-  min-width: 77.6656px;
-  transition-property:background, border-color, color;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-out;
   text-align: center;
   cursor: pointer;
   overflow-wrap: break-word;
@@ -344,25 +306,16 @@ h4{
   background: transparent;
   border:2px solid #008489;
   color: #008489;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue,! sans-serif;
-  font-style: normal;
-  font-weight: 800;
 }
 .pconfig{
   overflow-wrap:break-word;
   font-size: 16px;
   line-height: 22px;
-  font-family: Circular ;
   color: #484848;
   text-align: left;
-  font-weight: normal;
 }
 li{
   overflow-wrap:break-word;
-  font-family: Circular;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 18px;
   margin-bottom: 4px;
   letter-spacing: normal;
 }
@@ -385,31 +338,17 @@ li{
   margin-left: 45%;
 }
 .contenu p{
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue,! sans-serif;
   font-size:14px;
   color: rgb(118, 118, 118);
-  font-weight: 600;
 }
 .tdrl{
-  display: block;
-  width: 100%;
   cursor: pointer;
   position: relative;
-  font-weight: 600;
-  overflow-wrap: break-word;
-  font-size: 14px;
-  line-height: 18px;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue,! sans-serif;
-  color: rgb(72, 72, 72);
 }
 select{
-  color: rgb(72, 72, 72);
   display: block;
-  font-size: 14px;
-  line-height: 18px;
   float:right;
   border: none;
   cursor: pointer;
   background: transparent;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue,! sans-serif;
 }
