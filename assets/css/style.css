@@ -243,3 +243,171 @@ a:hover{
   background-repeat: no-repeat;
   text-align: right;
 }
+
+.Bordure {
+  border-bottom:1px solid black !important;
+}
+.espace{
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+a{
+  text-decoration: none;
+  color: #767676;
+}
+ul{
+  list-style: outside none ;
+}
+ .ua a:hover{
+  text-decoration: underline;
+  color: #767676;
+}
+.contenu{
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  margin-left: 15%;
+  margin-right: 15%;
+  border-color: 1px solid black;
+}
+h3{
+  font-family:   Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue,! sans-serif;
+  color:#484848;
+  text-shadow: 1px #4870ae;
+  font-style: normal;
+  font-weight: 800;
+  margin-left: 10%;
+}
+h4{
+  overflow-wrap: break-word !important;
+  font-family: font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue,! sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  src: url("https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Bold-bdfb98485e7836ba31b456f65cded088.woff2") format("woff2"), url("https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Bold-a188841af78481a25b7bb2316a5f5716.woff") format("woff");
+  margin-bottom: 100px;
+  color:#484848;
+  text-shadow: 1px #4870ae;
+  font-size:1em;
+  margin-bottom:18px;
+  margin-left: 40px;
+  padding:0px,
+}
+.FB{
+  margin-left: 45px;
+  font-weight: 600 ;
+  overflow-wrap: break-word ;
+  font-size: 14px ;
+  line-height: 18px ;
+  letter-spacing: normal ;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue,! sans-serif important;
+}
+.TW{
+  margin-left: 10px;
+  font-weight: 600 ;
+  overflow-wrap: break-word ;
+  font-size: 14px ;
+  line-height: 18px ;
+  letter-spacing: normal ;
+}
+.IT{
+  margin-left: 10px;
+  font-weight: 600 ;
+  overflow-wrap: break-word ;
+  font-size: 14px ;
+  line-height: 18px ;
+  letter-spacing: normal ;
+}
+#bouton{
+  min-width: 77.6656px;
+  float: right;
+  transition-property:background, border-color, color;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
+  text-align: center;
+  cursor: pointer;
+  overflow-wrap: break-word;
+  font-size: 20px;
+  height: 130%;
+  width: auto;
+  border-bottom-right-radius:5px 5px;
+  border-top-right-radius: 5px 5px;
+  border-bottom-left-radius: 5px 5px;
+  border-top-left-radius: 5px 5px;
+  background: transparent;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border:2px solid #008489;
+  color: #008489;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue,! sans-serif;
+  font-style: normal;
+  font-weight: 800;
+}
+.pconfig{
+  overflow-wrap:break-word;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: Circular ;
+  color: #484848;
+  text-align: left;
+  margin-left: 15%;
+  margin-bottom: 25%;
+  font-weight: normal;
+}
+li{
+  overflow-wrap:break-word;
+  font-family: Circular;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 4px;
+  letter-spacing: normal;
+}
+.botline1{
+  height: auto;
+  width:auto;
+  background: transparent;
+  border-bottom:1px solid rgb(219, 219, 219);
+  margin-bottom: 75px;
+}
+.botline2{
+  font-family: circular;
+  height: auto;
+  width: auto;
+  background: transparent;
+  border-bottom:1px solid rgb(219, 219, 219);
+  margin-bottom: 18px;
+}
+.contenu svg{
+  margin-left: 45%;
+}
+.contenu p{
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue,! sans-serif;
+  font-size:14px;
+  color: rgb(118, 118, 118);
+  font-weight: 600;
+}
+.tdrl{
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  font-weight: 600;
+  overflow-wrap: break-word;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue,! sans-serif;
+  color: rgb(72, 72, 72);
+}
+select{
+  color: rgb(72, 72, 72);
+  display: block;
+  font-size: 14px;
+  line-height: 18px;
+  float:right;
+  border: none;
+  cursor: pointer;
+  background: transparent;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue,! sans-serif;
+}
