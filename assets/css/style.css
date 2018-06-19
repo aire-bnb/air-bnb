@@ -190,3 +190,56 @@ small{
   margin: 0px ;
   overflow-wrap: break-word ;
 }
+ul li{
+  list-style-type: none;
+  text-align: left;
+  margin-left: -40px;
+}
+#nazelles{
+  color: rgb(115,79,33);
+  font-weight: 800;
+  line-height: 16px;
+  margin-top: 15px;
+}
+#avignon{
+  color: rgb(52,30,19);
+  font-weight: 800;
+  line-height: 16px;
+  margin-top: 15px;
+}
+#yourte{
+color: rgb(165,41,3);
+font-weight: 800;
+line-height: 16px;
+margin-top: 15px;
+}
+a:hover{
+  text-decoration: none;
+  color: inherit;
+}
+#description{
+  font-weight: 800;
+  font-size: 19px;
+  line-height: 22px;
+  color: rgb(72,72,72);
+}
+.fa-star , .fa-star-half{
+  color: #008489;
+}
+#classement{
+  font-size: 12px;
+}
+#superhost{
+  font-weight: bold;
+  line-height: 1.2rem;
+  letter-spacing: normal;
+  color: rgb(72,72,72);
+}
+.filtrePiscine{
+  background-color: blue;
+}
+#piscine{
+  background-size:contain;
+  background-repeat: no-repeat;
+  text-align: right;
+}
