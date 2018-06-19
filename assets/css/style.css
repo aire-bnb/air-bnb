@@ -17,10 +17,6 @@ body{
 nav{
   background: white;
 }
-.no-padding-x{
-  padding-left: 0;
-  padding-right: 0;
-}
 .relative{
   position: relative;
 }
@@ -78,7 +74,6 @@ nav{
   font-size: 1rem;
   font-family: Circular;
   line-height: 1.2rem;
-  letter-spacing: normal;
 }
 .normal-font, .normal-font-bold, .p1, .p2, .p3, .para3, .tdrl, select{
   color: rgb(72, 72, 72);
@@ -97,7 +92,6 @@ nav{
 .font-white{
   font-size: 1rem;
   line-height: 1.5rem;
-  letter-spacing: normal;
   color: rgb(255, 255, 255);
 }
 .button-color, small, #nazelles, #avignon, #yourte, #description, h3, h4, #bouton{
@@ -124,27 +118,21 @@ small{
 }
 .pmtitre{
   font-size: 19px;
-  line-height: 26px;
-  letter-spacing: normal;
 }
 .pmtitre1{
-  margin-bottom: 40px;
   font-size: 1em;
-  height: 20%;
+}
+.timg, .timg2, .pmtitre1, h3, h4, .pconfig{
+  color: #484848;
 }
 .timg, .timg2, .pmtitre1{
-  color: #484848;
-  font-weight: bold ;
-  line-height: inherit
-  letter-spacing: normal;
+  font-weight: bold;
 }
 .timg, .timg2{
   font-size: 2em;
 }
-.para, .para2{
+.para, .para2, a, .ua a:hover{
   color: #767676;
-  line-height: inherit
-  letter-spacing: normal;
 }
 .para, .FB, .TW, .IT, li, .tdrl, select{
   font-size: 14px;
@@ -156,9 +144,6 @@ small{
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
-}
-.timg2{
-  margin-bottom: 40px;
 }
 #car1{
   margin-right: 200px;
@@ -186,7 +171,7 @@ small{
   display: inline;
 }
 .para3{
-  overflow-wrap: break-word ;
+  overflow-wrap: break-word;
 }
 ul li{
   list-style-type: none;
@@ -210,8 +195,6 @@ a:hover{
 }
 #description{
   font-size: 19px;
-  line-height: 22px;
-  color: rgb(72,72,72);
 }
 .fa-star , .fa-star-half{
   color: #008489;
@@ -222,9 +205,8 @@ a:hover{
 #superhost, .normal-font-bold, .font-white-bold, .pmtitre{
   font-weight: bold;
 }
-#superhost{
+#superhost, #description{
   line-height: 1.2rem;
-  letter-spacing: normal;
   color: rgb(72,72,72);
 }
 .filtrePiscine{
@@ -241,94 +223,52 @@ a:hover{
 }
 a{
   text-decoration: none;
-  color: #767676;
 }
 ul{
   list-style: outside none ;
 }
- .ua a:hover{
+.ua a:hover{
   text-decoration: underline;
-  color: #767676;
 }
 .contenu{
-  width: auto;
-  height: auto;
-  background-color: transparent;
   margin-left: 15%;
   margin-right: 15%;
-  border-color: 1px solid black;
 }
-h3{
-  color:#484848;
+h3, h4{
   text-shadow: 1px #4870ae;
 }
 h4{
   src: url("https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Bold-bdfb98485e7836ba31b456f65cded088.woff2") format("woff2"), url("https://a0.muscache.com/airbnb/static/airbnb-dls-web/build/fonts/Airbnb_Cereal-Bold-a188841af78481a25b7bb2316a5f5716.woff") format("woff");
-  margin-bottom: 100px;
-  color:#484848;
-  text-shadow: 1px #4870ae;
   font-size:1em;
   margin-left: 40px;
-  padding:0px,
 }
-.FB{
-  margin-left: 45px;
+.FB, .TW, .IT{
   font-weight: 600 ;
-  overflow-wrap: break-word ;
-  line-height: 18px ;
-  letter-spacing: normal ;
-  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue,! sans-serif important;
-}
-.TW{
-  margin-left: 10px;
-  font-weight: 600 ;
-  overflow-wrap: break-word ;
-  line-height: 18px ;
-  letter-spacing: normal ;
-}
-.IT{
-  margin-left: 10px;
-  font-weight: 600 ;
-  overflow-wrap: break-word ;
   line-height: 18px ;
   letter-spacing: normal ;
 }
 #bouton{
   text-align: center;
   cursor: pointer;
-  overflow-wrap: break-word;
   font-size: 20px;
   border-radius: 5px;
   background: transparent;
   border:2px solid #008489;
   color: #008489;
 }
+#bouton:active{
+  background: #4ea6a6;
+  transition: all 0.5s ease;
+}
 .pconfig{
-  overflow-wrap:break-word;
-  font-size: 16px;
   line-height: 22px;
-  color: #484848;
   text-align: left;
 }
 li{
-  overflow-wrap:break-word;
   margin-bottom: 4px;
-  letter-spacing: normal;
 }
-.botline1{
-  height: auto;
-  width:auto;
-  background: transparent;
+.botline1, .botline2{
   border-bottom:1px solid rgb(219, 219, 219);
-  margin-bottom: 75px;
-}
-.botline2{
-  font-family: circular;
-  height: auto;
-  width: auto;
-  background: transparent;
-  border-bottom:1px solid rgb(219, 219, 219);
-  margin-bottom: 18px;
 }
 .contenu svg{
   margin-left: 45%;
@@ -339,21 +279,10 @@ li{
 }
 .tdrl{
   cursor: pointer;
-  position: relative;
-}
-select{
-  display: block;
-  float:right;
-  border: none;
-  cursor: pointer;
-  background: transparent;
+  border: none
 }
 .news{
-  max-width: 27px;
-  border-top-right-radius:5px 5px;
-  border-bottom-right-radius: 5px 5px;
-  border-top-left-radius: 5px 5px;
-  border-bottom-left-radius: 5px 5px;
+  border-radius: 5px;
   background-color: #008489;
   color:white;
   border: 1px solid #008489;
