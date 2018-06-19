@@ -87,7 +87,7 @@
           <div class="row my-1">
             <div class="col-6">
               <small>adultes</small>
-              <select class="w-100 input-style" name="">
+              <select class="w-100 input-style custom-select" name="">
                 <option value="1">1 adulte</option>
                 <option value="2">2 adultes</option>
                 <option value="3">3 adultes</option>
@@ -108,7 +108,7 @@
             </div>
             <div class="col-6">
               <small>enfants</small>
-              <select class="w-100 input-style" name="">
+              <select class="w-100 input-style custom-select" name="">
                 <option value="0">0 enfant</option>
                 <option value="1">1 enfant</option>
                 <option value="2">2 enfants</option>
@@ -211,7 +211,7 @@
                     <div class="row my-1">
                       <div class="col-6">
                         <small>adultes</small>
-                        <select class="w-100 input-style" name="">
+                        <select class="w-100 input-style custom-select" name="">
                           <option value="1">1 adulte</option>
                           <option value="2">2 adultes</option>
                           <option value="3">3 adultes</option>
@@ -232,7 +232,7 @@
                       </div>
                       <div class="col-6">
                         <small>enfants</small>
-                        <select class="w-100 input-style" name="">
+                        <select class="w-100 input-style custom-select" name="">
                           <option value="0">0 enfant</option>
                           <option value="1">1 enfant</option>
                           <option value="2">2 enfants</option>
@@ -275,44 +275,46 @@
         </path>
       </svg>
     </a>
-    <form class="m-0 p-0" action="index.html" method="post">
-      <input
-      autocomplete="off"
-      class="input-style float-left m-0 mt-2 w-25"
-      id=""
-      name="location"
-      placeholder="Partout"
-      value=""
-      role="textbox"
-      type="text"
-      />
-      <input
-      autocomplete="off"
-      class="input-style-left float-left m-0 mt-2"
-      id=""
-      name="location"
-      placeholder="jj/mm/aaaa"
-      value=""
-      role="textbox"
-      type="text"
-      />
-      <input
-      autocomplete="off"
-      class="input-style-right float-left m-0 mt-2"
-      id=""
-      name="location"
-      placeholder="jj/mm/aaaa"
-      value=""
-      role="textbox"
-      type="text"
-      />
-      <select class="input-style w-25 float-left m-0 mt-2" name="">
-        <option value="0">1 voyageur</option>
-      </select>
-      <button type="submit" class="button-color py-2 px-3 m-0 mt-2" aria-busy="false">
-        <span class="font-white">Rechercher</span>
-      </button>
-    </form>
+    <div class="d-none d-sm-block">
+      <form class="m-0 p-0" action="index.html" method="post">
+        <input
+        autocomplete="off"
+        class="input-style float-left m-0 mt-2 w-25"
+        id=""
+        name="location"
+        placeholder="Partout"
+        value=""
+        role="textbox"
+        type="text"
+        />
+        <input
+        autocomplete="off"
+        class="input-style-left float-left m-0 mt-2"
+        id=""
+        name="location"
+        placeholder="jj/mm/aaaa"
+        value=""
+        role="textbox"
+        type="text"
+        />
+        <input
+        autocomplete="off"
+        class="input-style-right float-left m-0 mt-2"
+        id=""
+        name="location"
+        placeholder="jj/mm/aaaa"
+        value=""
+        role="textbox"
+        type="text"
+        />
+        <select class="input-style w-25 float-left m-0 mt-2 custom-select" name="">
+          <option value="0">1 voyageur</option>
+        </select>
+        <button type="submit" class="button-color py-2 px-3 m-0 mt-2" aria-busy="false">
+          <span class="font-white">Rechercher</span>
+        </button>
+      </form>
+    </div>
   </nav>
   <div class="contenair-fluid">
     <div class="row">
