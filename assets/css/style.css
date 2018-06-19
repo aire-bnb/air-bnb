@@ -72,14 +72,12 @@ nav{
 }
 .normal-font{
   font-size: 1rem;
-  font-family: Circular;
   line-height: 1.2rem;
 }
 .normal-font, .normal-font-bold, .p1, .p2, .p3, .para3, .tdrl, select{
   color: rgb(72, 72, 72);
 }
 .normal-font-bold{
-  font-family: Circular;
   font-size: 2.3em;
 }
 .font-white-bold{
@@ -134,11 +132,11 @@ small{
 .para, .para2, a, .ua a:hover{
   color: #767676;
 }
-.para, .FB, .TW, .IT, li, .tdrl, select{
+.para, .FB, .TW, .IT, li, .tdrl, select, .para2{
   font-size: 14px;
 }
-.para2{
-  font-size: 16px;
+.ua li, .para{
+  font-weight: 600;
 }
 #margin-left{
   flex-wrap: wrap;
@@ -217,7 +215,6 @@ a:hover{
   background-repeat: no-repeat;
   text-align: right;
 }
-
 .Bordure {
   border-bottom:1px solid black;
 }
