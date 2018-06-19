@@ -348,3 +348,13 @@ select{
   cursor: pointer;
   background: transparent;
 }
+.news{
+  max-width: 27px;
+  border-top-right-radius:5px 5px;
+  border-bottom-right-radius: 5px 5px;
+  border-top-left-radius: 5px 5px;
+  border-bottom-left-radius: 5px 5px;
+  background-color: #008489;
+  color:white;
+  border: 1px solid #008489;
+}
